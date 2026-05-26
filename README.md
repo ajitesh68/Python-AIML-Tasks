@@ -22,27 +22,6 @@ Focus: **Engineering side of Python** (not web dev).
 | Performance | async/await, threading, profiling |
 | Testing | pytest, mocking, linting |
 
-## 📁 Structure
-
-Each task lives in its own folder:
-
-```
-task_01_experiment_tracker/   ← OOP, JSON, logging
-task_02_sqlite_integration/   ← SQLAlchemy, CRUD
-task_03_fastapi_endpoint/     ← API, Pydantic
-task_04_model_training/       ← sklearn, joblib
-task_05_cli_tool/             ← argparse
-task_06_docker_setup/         ← Docker, compose
-...
-```
-
-## 🚀 How to Use
-
-1. Go to each task folder
-2. Read the `README.md` inside — it explains what to build and what you'll learn
-3. Write the code yourself (skeleton with hints provided)
-4. Test, commit, push
-
 ## 👤 Author
 
 **Ajitesh Shukla** — Learning Python the engineering way.
