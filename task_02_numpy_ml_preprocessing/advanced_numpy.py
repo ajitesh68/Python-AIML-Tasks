@@ -54,3 +54,37 @@ science_marks = data[:,1].copy()
 science_marks = np.where(data[:,0]<35,0,science_marks)
 sorted_vals = np.sort(science_marks)
 print("Top 3:", sorted_vals[-3:])
+
+
+
+
+import numpy as np 
+
+grades = np.random.choice(['A','B','C','D'], size=(100,3))
+attendance = np.random.randint(40,100,size=(100,1))
+
+data = np.hstack((grades,attendance))
+
+
+unique_grades = np.unique(grades)
+print("For subject 0 (first column):")
+for i in unique_grades:
+    mask = grades[:,0] == i
+    mean_attendance = np.mean(attendance[mask])
+    print(f"Average attendance for {i}: {mean_attendance:.2f}%")
+    
+np.random.seed(42)
+marks = np.random.randint(0, 101, size=(100, 3))
+attendance = np.random.uniform(40, 100, size=(100, 1))
+data = np.hstack((marks, attendance))   
+
+cond = (data[:,0]>=35) & (data[:,1] >= 35) & (data[:,2] >= 35)
+status = np.where(cond, 'pass', 'fail')
+
+status_col = np.reshape(status,(-1,1))
+final_data = np.hstack((data,status_col))
+
+print("Final array shape:", final_data.shape)
+
+pass_count = np.sum(cond)
+print(f"Total students passed: {pass_count}")
