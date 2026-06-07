@@ -31,4 +31,7 @@ for epoch in range(100):
 print("Learned parameters:", model.linear.weight.item(),model.linear.bias.item())
 
 
-    
+#Epoch 1: .backward() calculates dw = 2. Optimizer uses dw=2 to update w.
+#Agar tune zero nahi kiya, to dw still 2 rahega (memory mein).
+#Epoch 2: .backward() calculates dw for new data, maan lo 3. Ab dw = 2 (old) + 3 (new) = 5 ho jayega.
+#Zero_grad() ka matlab hai "pichle gradients ko zero kar do, naya start karo".

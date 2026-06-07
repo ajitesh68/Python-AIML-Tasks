@@ -11,3 +11,6 @@ grad = tape.gradient(y,x)
 print("dy/dx at x=2:", grad.numpy())
 
 
+#tf.constant() se jo tensor banta hai wo immutable hota hai – uski value change nahi kar sakte.
+#tf.Variable() se bana tensor mutable hai – uski value change kar sakte ho (jaise weights update karte ho training mein).
+
