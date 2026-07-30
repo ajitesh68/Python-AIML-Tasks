@@ -1,0 +1,14 @@
+[
+  {
+    "experiment_name": "test_experiment_1",
+    "timestamp": "2026-05-26T15:15:45.396785",
+    "params": {
+      "lr": 0.01,
+      "epochs": 10
+    },
+    "metrics": {
+      "accuracy": 0.88,
+      "loss": 0.23
+    }
+  }
+]
